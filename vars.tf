@@ -1,2 +1,1 @@
 variable "ENV" {}
-variable "INTERNAL" {}

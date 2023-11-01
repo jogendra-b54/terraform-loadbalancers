@@ -1,14 +1,14 @@
 module "alb-public" {
   source                    = "./vendor/modules/alb"
   ENV                       = var.ENV
-  ALB_NAME                  = "roboshop-public-alb"
+  ALB_NAME                  = "robot-public-alb"
   INTERNAL                  = false
 }
 
 module "alb-private" {
   source                    = "./vendor/modules/alb"
   ENV                       = var.ENV
-  ALB_NAME                  = "roboshop-private-alb"
+  ALB_NAME                  = "robot-private-alb"
   INTERNAL                  = false
 }
 

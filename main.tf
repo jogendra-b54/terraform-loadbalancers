@@ -3,6 +3,7 @@ module "alb-public" {
   ENV                       = var.ENV
   ALB_NAME                  = "robot-public-alb"
   INTERNAL                  = false
+  LB_TYPE                   = "external"
   
 }
 
@@ -11,6 +12,7 @@ module "alb-private" {
   ENV                       = var.ENV
   ALB_NAME                  = "robot-private-alb"
   INTERNAL                  = true
+  LB_TYPE                   = "internal"
 }
 
 // You cannot variablize this piece of code in the source parameter
